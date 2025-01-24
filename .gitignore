@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# dotenv environment variable files
+.env
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs
+*.log
+pids
+*.pid
+
+# Build directories
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE or Editor directories
+.vscode/
+.idea/
+
+# Dependencies for deployment (if any)
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.swp
+*.swo
+
+# Render deployment
+/.render/
+
+# System files
+.vscode/
