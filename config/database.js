@@ -1,7 +1,7 @@
 const { Sequelize } = require("sequelize");
 require("dotenv").config();
 
-// For local development
+// For local development configuration
 const localDbConfig = {
   database: process.env.DB_NAME,
   username: process.env.DB_USER,
@@ -11,8 +11,10 @@ const localDbConfig = {
   logging: false, // Set to true for debugging queries
 };
 
-// For Render deployment, use the DATABASE_URL
+// For Render deployment, use DATABASE_URL
 const sequelize = new Sequelize(process.env.DATABASE_URL || localDbConfig, {
   dialect: "postgres",
   logging: false,
 });
+
+module.exports = sequelize;
